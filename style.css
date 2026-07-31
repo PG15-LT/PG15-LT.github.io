@@ -85,7 +85,7 @@ main {
     margin: 8px 0;
 }
 
-/* NEW: Arcade Game Board styling */
+/* Arcade Game Board styling */
 #game-board {
     width: 250px;
     height: 250px;
@@ -99,12 +99,11 @@ main {
 
 /* Player character styling */
 .player {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     background-color: #ffeb3b; /* Classic yellow Pac-Man color */
     border-radius: 50%;
     position: absolute;
-    transition: top 0.05s linear, left 0.05s linear;
 }
 
 /* Food dot styling */
@@ -116,11 +115,50 @@ main {
     position: absolute;
 }
 
+/* NEW: Ghost Obstacle styling */
+.ghost {
+    width: 22px;
+    height: 22px;
+    background-color: #ff4d4d; /* Red warning ghost color */
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+}
+
+/* NEW: Game Over Screen overlay styling with flashing animation */
+#game-over-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ff3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: flash 0.8s infinite alternate;
+    z-index: 10;
+}
+
+/* Helper utility class to hide elements */
+.hidden {
+    display: none !important;
+}
+
+/* Flashing keyframe effect */
+@keyframes flash {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
 /* Score text styling */
 #score-display {
     font-weight: bold;
     color: #2d3748;
-    margin-top: 5px;
+    margin: 5px 0;
 }
 
 /* Button styling */
@@ -133,7 +171,7 @@ button {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 button:hover {
