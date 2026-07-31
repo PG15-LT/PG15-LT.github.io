@@ -20,7 +20,7 @@
     <main>
         <div class="content-container">
             
-            <!-- Original Card Section -->
+            <!-- Interactive Fun Card -->
             <section class="card">
                 <h2>Interactive Fun</h2>
                 <p>Click the button below to change the background vibes!</p>
@@ -28,17 +28,27 @@
                 <button id="colorBtn">Click Me!</button>
             </section>
 
-            <!-- NEW: Fill-in-the-blank "About Me" Section -->
+            <!-- "About Me" Section -->
             <section class="card about-me">
                 <h2>About Me</h2>
-                <!-- Replace 'your-photo.jpg' with an actual image link or file name if you have one -->
+                <!-- Replace with your actual photo link if you want -->
                 <img src="https://via.placeholder.com/120" alt="Profile Picture Placeholder" class="profile-pic">
                 
                 <div class="bio-details">
-                    <p><strong>name:</strong> [Porter Giles]</p>
-                    <p><strong>Hobby:</strong> [My favorite hobby is to play video games and do MMA.]</p>
-                    <p><strong>Fun Fact:</strong> [I Have 3 older sisters and they are 5, 7, and 8 years older than me, and i have a step brother a year older than me.]</p>
+                    <p><strong>Name:</strong> [Type your name here]</p>
+                    <p><strong>Hobby:</strong> [Type your favorite hobby or sport here]</p>
+                    <p><strong>Fun Fact:</strong> [Type a fun fact about yourself here]</p>
                 </div>
+            </section>
+
+            <!-- NEW: Pac-Man Style Mini Game Section -->
+            <section class="card game-section">
+                <h2>Mini Arcade Game</h2>
+                <p>Use your <strong>Arrow Keys</strong> to move and eat the dots!</p>
+                <div id="game-board">
+                    <!-- The player and dots will be dynamically added or moved here via JavaScript -->
+                </div>
+                <p id="score-display">Score: 0</p>
             </section>
 
         </div>
