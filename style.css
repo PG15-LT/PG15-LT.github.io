@@ -42,7 +42,7 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    max-width: 900px;
+    max-width: 950px;
     width: 100%;
 }
 
@@ -62,7 +62,7 @@ main {
     margin-top: 0;
 }
 
-/* NEW: Profile picture styling */
+/* Profile picture styling */
 .profile-pic {
     width: 120px;
     height: 120px;
@@ -72,7 +72,7 @@ main {
     border: 4px solid #6e8efb;
 }
 
-/* NEW: Bio details alignment */
+/* Bio details alignment */
 .bio-details {
     text-align: left;
     background-color: #f7fafc;
@@ -83,6 +83,44 @@ main {
 
 .bio-details p {
     margin: 8px 0;
+}
+
+/* NEW: Arcade Game Board styling */
+#game-board {
+    width: 250px;
+    height: 250px;
+    background-color: #111111;
+    margin: 15px auto;
+    position: relative;
+    border: 4px solid #4a5568;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Player character styling */
+.player {
+    width: 25px;
+    height: 25px;
+    background-color: #ffeb3b; /* Classic yellow Pac-Man color */
+    border-radius: 50%;
+    position: absolute;
+    transition: top 0.05s linear, left 0.05s linear;
+}
+
+/* Food dot styling */
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Score text styling */
+#score-display {
+    font-weight: bold;
+    color: #2d3748;
+    margin-top: 5px;
 }
 
 /* Button styling */
