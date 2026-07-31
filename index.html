@@ -37,18 +37,25 @@
                 <div class="bio-details">
                     <p><strong>Name:</strong> Porter Giles</p>
                     <p><strong>Hobby:</strong> I like to play video games and also do MMA.</p>
-                    <p><strong>Fun Fact:</strong> I have 3 older sisters and 1 older step brother. My sisters are 5, 7, and 8 years older than me, my step brother is 1 year older than me.</p>
+                    <p><strong>Fun Fact:</strong>  I have 3 older sisters and 1 older step brother. My sisters are 5, 7, and 8 years older than me, my step brother is 1 year older than me.</p>
                 </div>
             </section>
 
-            <!-- NEW: Pac-Man Style Mini Game Section -->
+            <!-- PAC-MAN STYLE MINI GAME SECTION WITH START & OBSTACLES -->
             <section class="card game-section">
                 <h2>Mini Arcade Game</h2>
-                <p>Use your <strong>Arrow Keys</strong> to move and eat the dots!</p>
+                <p>Use your <strong>Arrow Keys</strong> to dodge ghosts and eat dots!</p>
+                
                 <div id="game-board">
-                    <!-- The player and dots will be dynamically added or moved here via JavaScript -->
+                    <!-- Game Over Overlay Message -->
+                    <div id="game-over-screen" class="hidden">GAME OVER</div>
                 </div>
-                <p id="score-display">Score: 0</p>
+
+                <div class="game-controls">
+                    <p id="score-display">Score: 0</p>
+                    <!-- NEW: Start Game Button -->
+                    <button id="startBtn">Start Game</button>
+                </div>
             </section>
 
         </div>
