@@ -1,0 +1,78 @@
+/* Global reset and styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #6e8efb, #a777ef);
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Main content area styling */
+main {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card container styling */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.card h2 {
+    color: #4a5568;
+    margin-top: 0;
+}
+
+/* Button styling */
+button {
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #5570d7;
+    transform: scale(1.05);
+}
+
+/* Footer styling */
+footer {
+    background-color: #2d3748;
+    color: #a0aec0;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+}
